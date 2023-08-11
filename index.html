@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
     <style>
         * {
             margin: 0;
@@ -41,11 +42,13 @@
             margin: 0 23px;
 
         }
-        nav ul li a{
+
+        nav ul li a {
             text-decoration: none;
             color: white;
         }
-        nav ul li a:hover{
+
+        nav ul li a:hover {
             color: rgb(158, 158, 215);
             font-size: 1.015rem;
         }
@@ -73,11 +76,17 @@
 
         .rightSection img {
             width: 80%;
-           
+
         }
 
         .purple {
             color: rgb(169, 106, 227);
+        }
+
+        .typed-output {
+            font-size: 2.2rem;
+            margin-top: 20px;
+            /* Adjust this value as needed */
         }
     </style>
 </head>
@@ -102,7 +111,9 @@
             <div class="leftSection">
                 Hi, My name is <span class="purple">Sukhpreet</span>
                 <div>and I am a passionate
-                    <div>Web Developer</div>
+                    
+                        <span id="element"></span> <!-- This is the element where Typed.js will type -->
+                    
                 </div>
             </div>
             <div class="rightSection">
@@ -110,6 +121,15 @@
             </div>
         </section>
     </main>
+    <script src="https://unpkg.com/typed.js@2.0.16"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var typed = new Typed('#element', {
+                strings: ['Web Developer', 'Data Science Enthusiast'],
+                typeSpeed: 50,
+            });
+        });
+    </script>
 </body>
 
 </html>

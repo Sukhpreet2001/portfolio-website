@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sukhpreet- Developer Portfolio </title>
+    <title>Sukhpreet- Developer Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -19,28 +19,58 @@
             background-color: rgb(0, 0, 33);
             color: white;
         }
-        nav{
+
+        nav {
             display: flex;
             justify-content: space-around;
             align-items: center;
             height: 80px;
             background-color: rgb(18, 18, 62);
-            
+
         }
-        nav ul{
+
+        nav ul {
             display: flex;
             justify-content: space-around;
             align-items: center;
-           
+
         }
-          nav ul li{
+
+        nav ul li {
             list-style: none;
             margin: 0 23px;
-           
-          }  
-          .left{
+
+        }
+
+        .left {
             font-size: 1.5rem;
-          }
+            margin: 38px;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 80px 0;
+        }
+
+        .firstSection>div {
+            width: 30%;
+
+        }
+
+        .leftSection {
+            width: 30%;
+            font-size: 2.2rem;
+        }
+
+        .rightSection img {
+            width: 80%;
+           
+        }
+
+        .purple {
+            color: rgb(169, 106, 227);
+        }
     </style>
 </head>
 
@@ -59,6 +89,19 @@
             </div>
         </nav>
     </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, My name is <span class="purple">Sukhpreet</span>
+                <div>and I am a passionate
+                    <div>Web Developer</div>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="bg.png" alt="bg" class="bg-image">
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>

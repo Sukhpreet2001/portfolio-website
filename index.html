@@ -83,10 +83,8 @@
             color: rgb(169, 106, 227);
         }
 
-        .typed-output {
-            font-size: 2.2rem;
-            margin-top: 20px;
-            /* Adjust this value as needed */
+        #element {
+            color: rgb(78, 68, 101);
         }
     </style>
 </head>
@@ -125,9 +123,17 @@
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             var typed = new Typed('#element', {
-                strings: ['Web Developer', 'Data Science Enthusiast'],
-                typeSpeed: 50,
-            });
+    strings: [
+        'a college student with a thirst for knowledge.',
+        'an aspiring web developer ',
+        'a data science enthusiast .'
+    ],
+    typeSpeed:[50,50,40],
+    backSpeed: 40, // You can adjust this value
+    backDelay: 1000 ,
+    smartBackspace:true// You can adjust this value
+});
+
         });
     </script>
 </body>

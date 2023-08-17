@@ -81,6 +81,15 @@
             font-size: 2.2rem;
         }
 
+        .leftSection .btn {
+            padding: 12px;
+            background: #1d2239bf;
+            color: white;
+            border-radius: 6px;
+            cursor: pointer;
+            border: 2px solid #423d63;
+        }
+
         .rightSection img {
             width: 80%;
 
@@ -148,13 +157,32 @@
             font-size: 10px;
             color: gray;
         }
-        footer{
+
+        footer {
             background-color: #1c112f;
             height: 233px;
-            padding: 23px 120px
+            padding: 23px 120px;
+
         }
-        .footer{
+
+        .footer {
             display: flex;
+            justify-content: space-evenly;
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer>div {
+            width: 250px;
+        }
+
+        footer .footer-rights {
+            text-align: center;
+            color: rgb(65, 64, 83);
+            font-size: 16px;
+            padding: 75px 0px;
         }
     </style>
 </head>
@@ -181,7 +209,12 @@
                 <div>and I am a passionate
                     <br>
                     <span id="element"></span> <!-- This is the element where Typed.js will type -->
-
+                    <div class="buttons">
+                        <br>
+                        <br>
+                        <button class="btn">Download Resume</button>
+                        <button class="btn">Visit GitHub</button>
+                    </div>
                 </div>
             </div>
             <div class="rightSection">
@@ -191,14 +224,16 @@
         <hr>
         <section class="secondSection">
             <span class="text-gray"> What I have done so far</span>
-            <h1>Experiences to be shared</h1>
+            <h2>Experiences to be shared</h2>
+            <br>
+            <br>
             <div class="box">
                 <div class="vertical">
                     <img src="student.png" alt="" class="img-top">
                     <div class="vertical-title">CSE Student <br>
                         (2020-present)</div>
                     <div class="vertical-desc">
-                         A Computer Science student at GNDEC, and the studies have covered a
+                        A Computer Science student at GNDEC, and the studies have covered a
                         wide range of topics within the field. </div>
                 </div>
                 <div class="vertical"><img src="nodejs.png" alt="" class="img-top">
@@ -227,11 +262,32 @@
     <footer>
         <div class="footer">
             <div class="footer-first">
-                Sukhpreet's Portfolio
+                <h3>Sukhpreet's Work Portfolio </h3>
             </div>
-            <div class="footer-second"></div>
-            <div class="footer-third"></div>
-            <div class="footer-fourth"></div>
+            <div class="footer-second">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <li>GitHub</li>
+                    <li>LinkedIn</li>
+                </ul>
+            </div>
+            <div class="footer-fourth">
+                <ul>
+                    <li>Terms of Use</li>
+                    <li>Privacy Policy</li>
+                    <li>Cookie Policy</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">
+            Copyright &#x00A9; sukhpreet-portfolio.com|All Rights Reserved
         </div>
     </footer>
     <script src="https://unpkg.com/typed.js@2.0.16"></script>
